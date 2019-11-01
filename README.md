@@ -19,7 +19,7 @@ To make things faster and skip cypress opening a browser for every feature file 
 
 ### Examples:
 
-There are a few tagged tests in these files:
+There is just one tagged test in these files, if there would be more, it is possible to use different tags for scenarios and features:
 
 [Caspar.feature]
 ```
@@ -44,7 +44,7 @@ Feature: The Caspar
 
 
 ###### Simple Example
-  Run ```./node_modules/.bin/cypress-tags run -e TAGS='@feature-tag'``` in this repo. As both `Caspar.feature` 
+  Run ```./node_modules/.bin/cypress-tags run -e TAGS='@feature-tag'``` in this repo. As `Caspar.feature` 
   have `@feature-tag` above the feature name, the result should be: 
   
   ```
@@ -75,4 +75,4 @@ Run ```./node_modules/.bin/cypress-tags run -e TAGS='@another-tag-to-include and
 
 [cypress-io/cypress#3323](https://github.com/cypress-io/cypress/issues/3323)
 
-Our advice is to not use the "run all" in the GUI - which would be slow once you have enough .feature files anyway. Running through cypress run (for CI use) works as described. 
+The advice is to not use the "run all" in the GUI - which would be slow once you have enough .feature files anyway. Running through cypress run (for CI use) works as described. 
